@@ -1,0 +1,127 @@
+body{font-family: 'Shantell Sans', cursive;}
+
+header{color:grey; padding-left:2em; padding-right:2em; font-size:1.3em;}
+	
+	.headerText{
+	background-color:darkblue;
+	opacity: 0.7;
+	text-align:center; 
+	padding-top:2em;}
+	
+	.hero {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+	.heroTxt {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+	.headerText p {color:white;}
+	.headerText h1 {color:lightgreen;}
+	
+
+  
+	.recContent, .planTrip 
+	{
+		font-size:0.8em; 
+		text-align:center; 
+		padding-top:2em;
+	}
+	
+	footer{background-color:darkblue; opacity:0.7; 
+	text-align:center;}
+	
+	footer h1 {line-height:1.6em; color:lightgreen;}
+	footer p {line-height:1.6em; color:white;}
+	footer a{
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+	.grid-container{justify-self: center;
+	display:grid; 
+	grid-template-columns:100%; 
+	width: 80%; 
+	margin-right:auto; 
+	margin-left:auto;}
+	
+	header img{display:none;}
+	img{max-width:100%;}
+	@media only screen and (min-width:768px)
+	{	
+	
+	.container {
+  margin: 20px;
+  width: auto;
+}
+.topnav {
+  overflow: hidden;
+
+}
+	.topnav a {
+  float: left;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+	header img{display:inline;}
+		.grid-container
+		{
+		grid-template-columns:repeat(6,16.6%)
+		}
+		.headerText {grid-column:1/7;}
+		.recContent{grid-column:1/7;}
+		.content1{grid-column:1/4; font-size:0.8em; }
+		.content2{grid-column:4/7; font-size:0.8em; }
+		.content3{grid-column:1/7; font-size:0.8em; }
+		
+		.planTrip{grid-column:1/13;}
+		.plan1{grid-column:1/3;}
+		.plan2{grid-column:3/5;}
+		.plan3{grid-column:5/7;}
+		.plan4{grid-column:1/7;}
+		.plan4 h2,p{text-align:center;}
+		header h1{font-size:2em;}
+	}
+	@media only screen and (min-width:992px)
+	{
+	img{display:inline;}
+	header h1{font-size:3em;}
+		.grid-container{
+		width:60%;
+		grid-template-columns:repeat(12,8.3%);
+		}
+
+		.headerText {grid-column: 1/13; }
+		.recContent {grid-column: 1/13;text-align:center;}
+		
+		.content1{grid-column:1/7;}
+		.content2{grid-column:7/13;}
+		.content3{grid-column:1/13;}
+		.content3{grid-row: 4/6;}
+		
+		
+		.plan1{grid-column:1/5;}
+		.plan2{grid-column:5/9;}
+		.plan3{grid-column:9/13;}
+		.plan4{text-align:centre;grid-column:1/13;}
+		.plan4 h2,p{text-align:center;}
+	}
